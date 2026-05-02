@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,28 +13,27 @@
   <body class="theme-life">
     <div data-site-header></div>
 
-    <main class="container">
-      <section class="hero">
-        <div class="hero-card">
-          <span class="badge">Life</span>
-          <p class="breadcrumb">Home / Documents / Life / Credit Card Usage</p>
-          <h1>Credit Card Usage in Japan</h1>
-          <p class="lead">
-            This article provides an overview of credit card usage in Japan, including major brands and how people use them in daily life.
-          </p>
-        </div>
-      </section>
+    <main class="container wide-content">
+      <div
+        data-site-hero
+        data-hero-title="Credit Card Usage in Japan"
+        data-hero-lead="This article provides an overview of credit card usage in Japan, including major brands and how people use them in daily life."
+        data-hero-breadcrumb="Home / Documents / Life / Credit Card Usage"
+        data-sidebar-label="Credit Card"
+      ></div>
       <section class="section card">
         <h2>1. Overview of credit card usage in Japan</h2>
-        <p>
-          In Japan, credit cards are mainly used for:
-        </p>
-        <ul>
-          <li>Online shopping (Amazon, Rakuten, travel booking, subscriptions)</li>
-          <li>Daily payments in supermarkets, convenience stores, and restaurants</li>
-          <li>Public transport (via contactless or linked apps) and taxis</li>
-          <li>Utility bills, mobile phone plans, and streaming services</li>
-        </ul>
+        <table class="summary-table">
+          <thead>
+            <tr><th>Category</th><th>Examples</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Online</td><td>Amazon, Rakuten, travel booking, subscriptions</td></tr>
+            <tr><td>In-store</td><td>Supermarkets, convenience stores, restaurants</td></tr>
+            <tr><td>Transport</td><td>Public transit (contactless / linked apps), taxis</td></tr>
+            <tr><td>Bills</td><td>Utility bills, mobile plans, streaming services</td></tr>
+          </tbody>
+        </table>
         <p>
           Most people hold at least one card from a major international brand
           (Visa or Mastercard), and many also have a domestic-focused card such as JCB.
@@ -48,72 +47,18 @@
           Acceptance varies between domestic and overseas use.
         </p>
 
-        <ul class="brand-list">
-          <li class="card-box">
-            <h3>Visa</h3>
-            <p>
-              Visa is one of the most widely accepted brands in Japan and overseas.
-              Many Japanese banks and card issuers offer Visa cards, making it a
-              standard choice for both domestic and international use.
-            </p>
-            <p>
-              <span class="tag">High acceptance</span>
-              <span class="tag">Good for overseas</span>
-            </p>
-          </li>
-
-          <li class="card-box">
-            <h3>Mastercard</h3>
-            <p>
-              Mastercard is also very common and has similar acceptance to Visa.
-              It is frequently chosen as a second card brand to avoid relying on
-              only one network when traveling abroad.
-            </p>
-            <p>
-              <span class="tag">High acceptance</span>
-              <span class="tag">Good for overseas</span>
-            </p>
-          </li>
-
-          <li class="card-box">
-            <h3>JCB</h3>
-            <p>
-              JCB is Japan’s domestic card brand. It is widely accepted inside Japan
-              and often offers strong point programs and campaigns for Japanese users.
-              However, acceptance can be limited in Europe and some other regions.
-            </p>
-            <p>
-              <span class="tag">Domestic-focused</span>
-              <span class="tag">Limited in Europe</span>
-            </p>
-          </li>
-
-          <li class="card-box">
-            <h3>American Express (Amex)</h3>
-            <p>
-              Amex is available in Japan and is popular among users who value travel
-              benefits and premium services. Acceptance is good in major cities and
-              large merchants, but not as universal as Visa or Mastercard.
-            </p>
-            <p>
-              <span class="tag">Travel perks</span>
-              <span class="tag">Selective acceptance</span>
-            </p>
-          </li>
-
-          <li class="card-box">
-            <h3>Diners Club</h3>
-            <p>
-              Diners Club is a niche, premium-oriented brand in Japan. It is less
-              common than other brands and mainly used by frequent travelers or
-              business users who want lounge access and special services.
-            </p>
-            <p>
-              <span class="tag">Premium</span>
-              <span class="tag">Niche</span>
-            </p>
-          </li>
-        </ul>
+            <table class="summary-table">
+              <thead>
+                <tr><th>Brand</th><th>JP</th><th>Overseas</th><th>Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Visa</td><td>High</td><td>High</td><td>Most widely accepted; standard choice for international use</td></tr>
+                <tr><td>Mastercard</td><td>High</td><td>High</td><td>Often chosen as a second card for overseas backup</td></tr>
+                <tr><td>JCB</td><td>High</td><td>Moderate to low (varies by region)</td><td>Japan's domestic brand; strong point programs</td></tr>
+                <tr><td>American Express</td><td>Moderate to high (major cities)</td><td>Moderate</td><td>Popular for travel perks and premium services</td></tr>
+                <tr><td>Diners Club</td><td>Limited</td><td>Limited</td><td>Niche; mainly frequent travelers and business users</td></tr>
+              </tbody>
+            </table>
       </section>
 
       <section id="issuers" class="section card">
@@ -124,219 +69,103 @@
           Below are some of the most common issuers.
         </p>
 
-        <ul class="issuer-list">
-          <li class="card-box">
-            <h3>Rakuten Card</h3>
-            <p>
-              Rakuten Card is one of the most popular cards in Japan, especially among
-              online shoppers. It has no annual fee and offers strong point rewards
-              on Rakuten services and many everyday purchases.
-            </p>
-            <p>
-              <span class="tag">No annual fee</span>
-              <span class="tag">Online shopping</span>
-            </p>
-          </li>
-
-          <li class="card-box">
-            <h3>Mitsui Sumitomo Card</h3>
-            <p>
-              Mitsui Sumitomo offers a wide range of Visa and Mastercard products,
-              including no-annual-fee cards. They are known for solid security,
-              contactless payments, and compatibility with many Japanese banks.
-            </p>
-            <p>
-              <span class="tag">Bank-linked</span>
-              <span class="tag">Visa / Mastercard</span>
-            </p>
-          </li>
-
-          <li class="card-box">
-            <h3>EPOS Card</h3>
-            <p>
-              EPOS Card is popular among younger users and frequent shoppers at
-              certain department stores and fashion brands. It often includes
-              strong overseas travel insurance even on no-annual-fee cards.
-            </p>
-            <p>
-              <span class="tag">Travel insurance</span>
-              <span class="tag">No annual fee options</span>
-            </p>
-          </li>
-
-          <li class="card-box">
-            <h3>AEON Card</h3>
-            <p>
-              AEON Card is widely used by people who shop at AEON group supermarkets
-              and malls. It offers discounts and point bonuses on AEON purchases,
-              and is common in suburban areas.
-            </p>
-            <p>
-              <span class="tag">Supermarket benefits</span>
-              <span class="tag">Everyday shopping</span>
-            </p>
-          </li>
-
-          <li class="card-box">
-            <h3>Other bank cards</h3>
-            <p>
-              Many Japanese banks (MUFG, SMBC, Mizuho, regional banks) issue their
-              own credit cards, often co-branded with Visa, Mastercard, or JCB.
-              These are convenient for users who want to manage banking and card
-              payments in one place.
-            </p>
-            <p>
-              <span class="tag">Bank-linked</span>
-            </p>
-          </li>
-        </ul>
+        <table class="summary-table">
+          <thead>
+            <tr><th>Issuer</th><th>Network</th><th>Key Feature</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Rakuten Card</td><td>Visa / Mastercard / JCB</td><td>No annual fee; strong Rakuten point rewards</td></tr>
+            <tr><td>Mitsui Sumitomo (SMCC)</td><td>Visa / Mastercard</td><td>Bank-linked; contactless; solid security</td></tr>
+            <tr><td>EPOS Card</td><td>Visa</td><td>Travel insurance included; popular with younger users</td></tr>
+            <tr><td>AEON Card</td><td>Visa / Mastercard / JCB</td><td>Discounts at AEON stores; everyday shopping focus</td></tr>
+            <tr><td>Bank-issued (MUFG, SMBC, Mizuho…)</td><td>Various</td><td>Banking and card management in one place</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <section id="usage-patterns" class="section card">
         <h2>4. How people use credit cards in Japan</h2>
         <h3>4.1 Everyday payments</h3>
         <p>
-          In cities, same in foreign countries, it is now common to pay by credit card or contactless for:
+          In cities, credit card and contactless payment are widely accepted:
         </p>
-        <ul>
-          <li>Convenience stores (konbini) such as 7-Eleven, Lawson, and FamilyMart</li>
-          <li>Supermarkets and drugstores, such as Aeon, Ito-Yokado, and Matsumoto Kiyoshi</li>
-          <li>Cafés and chain restaurants, such as Starbucks, Doutor, and McDonald's</li>
-          <li>Clothing and electronics shops, such as Uniqlo, Muji, Bic Camera, and Yodobashi Camera</li>
-        </ul>
+        <table class="summary-table">
+          <thead>
+            <tr><th>Location</th><th>Examples</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Convenience stores</td><td>7-Eleven, Lawson, FamilyMart</td></tr>
+            <tr><td>Supermarkets &amp; drugstores</td><td>AEON, Ito-Yokado, Matsumoto Kiyoshi</td></tr>
+            <tr><td>Cafés &amp; chain restaurants</td><td>Starbucks, Doutor, McDonald's</td></tr>
+            <tr><td>Clothing &amp; electronics</td><td>Uniqlo, Muji, Bic Camera, Yodobashi Camera</td></tr>
+          </tbody>
+        </table>
+        <p />
 
-        <p>
-          However, in rural areas and not very big prefectures(such as Tottori or Shimane, Aomori, Akita, etc.), 
-          or small businesses, cash is still more common,
-          and some places may not accept credit cards at all.
-        </p>
+        <div class="callout warning">
+          <p>
+            In rural areas and not very big prefectures, cash is still more common,
+            and some places may not accept credit cards at all.
+          </p>
+        </div>
 
-        <table>
-        <thead>
+        <table class="summary-table">
+          <thead>
             <tr>
-            <th>Prefecture</th>
-            <th>Characteristics</th>
-            <th>Card Acceptance Tendency</th>
+              <th>Region</th>
+              <th>Prefecture</th>
+              <th>Card Acceptance</th>
             </tr>
-        </thead>
-        <tbody>
-            <!-- Tohoku -->
+          </thead>
+          <tbody>
             <tr>
-            <td>Aomori</td>
-            <td>Rural areas, small family-run shops, aging population</td>
-            <td>Low to moderate</td>
+              <td rowspan="5">Tohoku(東北)</td>
+              <td>Aomori (青森)</td>
+              <td>Low to moderate</td>
             </tr>
+            <tr><td>Akita (秋田)</td>
+              <td>Low</td>
+            </tr>
+            <tr><td>Iwate (岩手)</td><td>Low to moderate</td></tr>
+            <tr><td>Yamagata (山形)</td><td>Moderate</td></tr>
+            <tr><td>Fukushima (福島)</td><td>Moderate</td></tr>
             <tr>
-            <td>Akita</td>
-            <td>Large rural regions, traditional businesses</td>
-            <td>Low</td>
+              <td rowspan="4">Hokuriku / Chubu (北陸 / 中部)</td>
+              <td>Niigata (新潟)</td>
+              <td>Moderate</td>
             </tr>
+            <tr><td>Fukui (福井)</td><td>Low to moderate</td></tr>
+            <tr><td>Ishikawa (石川)</td><td>Moderate</td></tr>
+            <tr><td>Nagano (長野)</td><td>Moderate</td></tr>
             <tr>
-            <td>Iwate</td>
-            <td>Wide rural land area, fewer large chains</td>
-            <td>Low to moderate</td>
+              <td rowspan="3">Kanto (rural) (関東)</td>
+              <td>Ibaraki (茨城)</td>
+              <td>Moderate</td>
             </tr>
+            <tr><td>Tochigi (栃木)</td><td>Moderate</td></tr>
+            <tr><td>Gunma (群馬)</td><td>Moderate</td></tr>
             <tr>
-            <td>Yamagata</td>
-            <td>Local markets and small shops common</td>
-            <td>Moderate</td>
+              <td rowspan="3">Chugoku (中国)</td>
+              <td>Tottori (鳥取)</td>
+              <td>Low</td>
             </tr>
+            <tr><td>Shimane (島根)</td><td>Low</td></tr>
+            <tr><td>Yamaguchi (山口)</td><td>Moderate</td></tr>
             <tr>
-            <td>Fukushima</td>
-            <td>Outside city centers, cash culture remains strong</td>
-            <td>Moderate</td>
+              <td rowspan="3">Shikoku (四国)</td>
+              <td>Kochi (高知)</td>
+              <td>Low</td>
             </tr>
-
-            <!-- Hokuriku / Chubu -->
+            <tr><td>Tokushima (徳島)</td><td>Moderate</td></tr>
+            <tr><td>Ehime (愛媛)</td><td>Moderate</td></tr>
             <tr>
-            <td>Niigata</td>
-            <td>Large rural areas, many local independent stores</td>
-            <td>Moderate</td>
+              <td rowspan="3">Kyushu (九州)</td>
+              <td>Miyazaki (宮崎)</td>
+              <td>Moderate</td>
             </tr>
-            <tr>
-            <td>Fukui</td>
-            <td>Small population, traditional shops</td>
-            <td>Low to moderate</td>
-            </tr>
-            <tr>
-            <td>Ishikawa</td>
-            <td>Tourism exists but small local shops still common</td>
-            <td>Moderate</td>
-            </tr>
-            <tr>
-            <td>Nagano</td>
-            <td>Mountainous rural areas, local inns and small eateries</td>
-            <td>Moderate</td>
-            </tr>
-
-            <!-- Kanto (rural) -->
-            <tr>
-            <td>Ibaraki</td>
-            <td>Suburban/rural mix; small businesses may be cash-only</td>
-            <td>Moderate</td>
-            </tr>
-            <tr>
-            <td>Tochigi</td>
-            <td>Tourism areas with small local shops</td>
-            <td>Moderate</td>
-            </tr>
-            <tr>
-            <td>Gunma</td>
-            <td>Hot spring towns with cash-only inns</td>
-            <td>Moderate</td>
-            </tr>
-
-            <!-- Chugoku -->
-            <tr>
-            <td>Tottori</td>
-            <td>Smallest population in Japan; many cash-only shops</td>
-            <td>Low</td>
-            </tr>
-            <tr>
-            <td>Shimane</td>
-            <td>Rural and traditional businesses dominant</td>
-            <td>Low</td>
-            </tr>
-            <tr>
-            <td>Yamaguchi</td>
-            <td>Local independent shops common</td>
-            <td>Moderate</td>
-            </tr>
-
-            <!-- Shikoku -->
-            <tr>
-            <td>Kochi</td>
-            <td>Rural coastline, small independent stores</td>
-            <td>Low</td>
-            </tr>
-            <tr>
-            <td>Tokushima</td>
-            <td>Local markets and small eateries</td>
-            <td>Moderate</td>
-            </tr>
-            <tr>
-            <td>Ehime</td>
-            <td>Small local businesses outside Matsuyama</td>
-            <td>Moderate</td>
-            </tr>
-
-            <!-- Kyushu -->
-            <tr>
-            <td>Miyazaki</td>
-            <td>Tourism exists but many small local shops</td>
-            <td>Moderate</td>
-            </tr>
-            <tr>
-            <td>Kagoshima</td>
-            <td>Rural islands, local markets</td>
-            <td>Low to moderate</td>
-            </tr>
-            <tr>
-            <td>Nagasaki</td>
-            <td>Tourism areas mixed with traditional shops</td>
-            <td>Moderate</td>
-            </tr>
-        </tbody>
+            <tr><td>Kagoshima (鹿児島)</td><td>Low to moderate</td></tr>
+            <tr><td>Nagasaki (長崎)</td><td>Moderate</td></tr>
+          </tbody>
         </table>
 
 
@@ -354,12 +183,17 @@
         <p>
           When choosing a card in Japan, people usually consider:
         </p>
-        <ul>
-          <li>Annual fee (many popular cards are free)</li>
-          <li>Point rewards such as Rakuten Points and where they can be used (online, supermarkets, travel)</li>
-          <li>Travel insurance and overseas usage fees</li>
-          <li>Security features (2FA, usage notifications, easy card lock)</li>
-        </ul>
+        <table class="summary-table">
+          <thead>
+            <tr><th>Factor</th><th>Details</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Annual fee</td><td>Many popular cards are free</td></tr>
+            <tr><td>Point rewards</td><td>Rakuten Points; usable online, at supermarkets, for travel</td></tr>
+            <tr><td>Travel insurance</td><td>Check overseas usage fees and coverage</td></tr>
+            <tr><td>Security</td><td>2FA, usage notifications, easy card lock</td></tr>
+          </tbody>
+        </table>
         <p>
           Many residents hold at least two cards: one Visa or Mastercard for global
           acceptance, and one domestic-focused card for local point programs.
@@ -373,6 +207,15 @@
     <script src="../../js/sidebar-data.js" defer></script>
     <script src="../../js/site-layout.js" defer></script>
     <script src="../../js/global-sidebar.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".summary-table td").forEach((cell) => {
+          if (/\blow\b/i.test(cell.textContent)) {
+            cell.classList.add("low-text");
+          }
+        });
+      });
+    </script>
     <!-- SIDEBAR_LOADER_END -->
   </body>
 </html>

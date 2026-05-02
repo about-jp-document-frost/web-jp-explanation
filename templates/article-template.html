@@ -27,16 +27,13 @@
     </header>
 
     <main class="container">
-      <section class="hero">
-        <div class="hero-card">
-          <span class="badge">{{BADGE_TEXT}}</span>
-          <p class="breadcrumb">Home / Documents / {{CATEGORY_NAME}} / {{SHORT_BREADCRUMB}}</p>
-          <h1>{{PAGE_TITLE}}</h1>
-          <p class="lead">
-            {{LEAD_TEXT}}
-          </p>
-        </div>
-      </section>
+      <div
+        data-site-hero
+        data-hero-title="{{PAGE_TITLE}}"
+        data-hero-lead="{{LEAD_TEXT}}"
+        data-hero-breadcrumb="Home / Documents / {{CATEGORY_NAME}} / {{SHORT_BREADCRUMB}}"
+        data-sidebar-label="{{SIDEBAR_LABEL}}"
+      ></div>
 
       <section class="section card">
         <h2>1. Section Title</h2>

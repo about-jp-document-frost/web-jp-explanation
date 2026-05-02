@@ -83,6 +83,86 @@
     ].join('');
   }
 
+  function getCategoryTitle(config) {
+    var segments = window.location.pathname.split('/');
+    var docIndex = segments.indexOf('document');
+    if (docIndex === -1 || docIndex + 1 >= segments.length) {
+      return '';
+    }
+    var folderKey = segments[docIndex + 1];
+    if (config && Array.isArray(config.groups)) {
+      for (var i = 0; i < config.groups.length; i++) {
+        if (config.groups[i].key === folderKey) {
+          return config.groups[i].title;
+        }
+      }
+    }
+    return folderKey.charAt(0).toUpperCase() + folderKey.slice(1);
+  }
+
+  function buildBreadcrumbHTML(basePath, config, sidebarLabel) {
+    var segments = window.location.pathname.split('/');
+    var docIndex = segments.indexOf('document');
+    if (docIndex === -1) {
+      return '';
+    }
+
+    var folderKey  = segments[docIndex + 1] || '';
+    var fileName   = segments[docIndex + 2] || '';
+    var isIndex    = !fileName || fileName === 'index.html' || fileName === '';
+
+    var categoryTitle = getCategoryTitle(config);
+    var sep = '<span class="breadcrumb-sep"> / </span>';
+    var parts = [];
+
+    parts.push('<a href="' + escapeHtml(basePath + 'index.html') + '">Home</a>');
+
+    if (folderKey) {
+      if (isIndex) {
+        parts.push('<span>' + escapeHtml(categoryTitle) + '</span>');
+      } else {
+        var catHref = basePath + 'document/' + folderKey + '/index.html';
+        parts.push('<a href="' + escapeHtml(catHref) + '">' + escapeHtml(categoryTitle) + '</a>');
+        var pageLabel = sidebarLabel || (function () {
+          var name = fileName.replace(/\.html$/, '');
+          return (name.split('-').map(function (w) { return w.charAt(0).toUpperCase() + w.slice(1); })).join(' ');
+        }());
+        parts.push('<span>' + escapeHtml(pageLabel) + '</span>');
+      }
+    }
+
+    return '<nav class="breadcrumb">' + parts.join(sep) + '</nav>';
+  }
+
+  function buildHeroHTML(title, lead, categoryTitle, breadcrumbHtml) {
+    var badgeHtml = categoryTitle ? '<span class="badge">' + escapeHtml(categoryTitle) + '</span>' : '';
+    var leadHtml  = lead ? '<p class="lead">' + escapeHtml(lead) + '</p>' : '';
+    return [
+      '<section class="hero">',
+      '  <div class="hero-card">',
+      '    ' + badgeHtml,
+      '    ' + breadcrumbHtml,
+      '    <h1>' + escapeHtml(title) + '</h1>',
+      '    ' + leadHtml,
+      '  </div>',
+      '</section>'
+    ].join('');
+  }
+
+  function renderHero(config) {
+    var heroRoot = document.querySelector('[data-site-hero]');
+    if (!heroRoot) {
+      return;
+    }
+    var basePath      = getBasePath();
+    var title         = heroRoot.getAttribute('data-hero-title') || '';
+    var lead          = heroRoot.getAttribute('data-hero-lead') || '';
+    var sidebarLabel  = heroRoot.getAttribute('data-sidebar-label') || '';
+    var categoryTitle = getCategoryTitle(config);
+    var breadcrumbHtml = buildBreadcrumbHTML(basePath, config, sidebarLabel);
+    heroRoot.outerHTML = buildHeroHTML(title, lead, categoryTitle, breadcrumbHtml);
+  }
+
   function buildFooterHTML() {
     return [
       '<footer class="site-footer">',
@@ -105,6 +185,8 @@
     if (footerRoot) {
       footerRoot.innerHTML = buildFooterHTML();
     }
+
+    renderHero(config);
   }
 
   window.SiteLayout = {

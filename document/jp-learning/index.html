@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,42 +14,20 @@
     <div data-site-header></div>
 
     <main class="container">
-      <section class="hero">
-        <div class="hero-card">
-          <span class="badge">JP Learning</span>
-          <p class="breadcrumb">Home / Documents / JP Learning</p>
-          <h1>Japanese Language Learning</h1>
-          <p class="lead">
-            This section provides practical articles about Japanese language learning, including greetings, expressions for calling someone, and communication patterns in everyday situations.
-          </p>
-        </div>
-      </section>
+      <div
+        data-site-hero
+        data-hero-title="Japanese Language Learning"
+        data-hero-lead="This section provides practical articles about Japanese language learning, including greetings, expressions for calling someone, and communication patterns in everyday situations."
+        data-hero-breadcrumb="Home / Documents / JP Learning"
+      ></div>
 
-      <section class="section">
-        <h2>Featured Articles</h2>
-        <div class="grid">
-          <article class="card feature-card">
-            <div class="card-thumb thumb-culture"></div>
-            <p class="section-label">JP Learning</p>
-            <h3>Japanese Greetings and Polite Expressions</h3>
-            <p>A comprehensive guide to common greetings, expressions of gratitude, and appropriate ways to address people in different contexts.</p>
-            <a class="button secondary" href="greeting.html">Read Article</a>
-          </article>
-          <article class="card feature-card">
-            <div class="card-thumb thumb-culture"></div>
-            <p class="section-label">JP Learning</p>
-            <h3>How to Call Someone in Japanese</h3>
-            <p>Explains different ways to call or address someone in Japanese, including pronouns, titles, and context-dependent expressions.</p>
-            <a class="button secondary" href="call-someone.html">Read Article</a>
-          </article>
-          <article class="card feature-card">
-            <div class="card-thumb thumb-culture"></div>
-            <p class="section-label">JP Learning</p>
-            <h3>How to Call Yourself in Japanese</h3>
-            <p>A guide to different ways of referring to yourself in Japanese, depending on context, formality level, and gender.</p>
-            <a class="button secondary" href="call-yourself.html">Read Article</a>
-          </article>
-        </div>
+      <section class="section card">
+        <h2>Articles</h2>
+        <ul class="article-list">
+          <li><a class="article-row" href="greeting.html"><span class="article-row-title">Greetings and Polite Expressions</span><span class="article-row-desc">Common greetings and how to address people in different contexts</span><span class="article-row-arrow">›</span></a></li>
+          <li><a class="article-row" href="call-someone.html"><span class="article-row-title">How to Call Someone</span><span class="article-row-desc">Pronouns, titles, and context-dependent expressions</span><span class="article-row-arrow">›</span></a></li>
+          <li><a class="article-row" href="call-yourself.html"><span class="article-row-title">How to Refer to Yourself</span><span class="article-row-desc">Self-reference depending on context, formality, and gender</span><span class="article-row-arrow">›</span></a></li>
+        </ul>
       </section>
     </main>
 

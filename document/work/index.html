@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,14 +14,12 @@
     <div data-site-header></div>
 
     <main class="container">
-      <section class="hero">
-        <div class="hero-card">
-          <span class="badge">Work</span>
-          <p class="breadcrumb">Home / Documents / Work</p>
-          <h1>Working in Japan Q&A</h1>
-          <p class="lead">This section summarizes the basics of job hunting, business manners, and workplace communication in Japan.</p>
-        </div>
-      </section>
+      <div
+        data-site-hero
+        data-hero-title="Working in Japan Q&amp;A"
+        data-hero-lead="This section summarizes the basics of job hunting, business manners, and workplace communication in Japan."
+        data-hero-breadcrumb="Home / Documents / Work"
+      ></div>
 
       <section class="section card">
         <h2>Frequently Asked Questions</h2>
@@ -33,55 +31,25 @@
         </ol>
       </section>
 
-      <section class="section">
-        <h2>Featured Articles</h2>
-        <div class="grid">
-          <article class="card feature-card">
-            <div class="card-thumb thumb-work"></div>
-            <p class="section-label">Work</p>
-            <h3>Why Japan Does Not Use Internships to Build Work Experience</h3>
-            <p>Explains why Japanese internships are not used as a pathway for gaining work experience, and how the hiring system differs from Western countries.</p>
-            <a class="button secondary" href="internship.html">Read Article</a>
-          </article>
-          <article class="card feature-card">
-            <div class="card-thumb thumb-work"></div>
-            <p class="section-label">Work</p>
-            <h3>Why Most Japanese Students Graduate With No Work Experience</h3>
-            <p>Explains why having zero professional experience is completely normal for Japanese graduates, and why this does not disadvantage them in Japan.</p>
-            <a class="button secondary" href="general.html">Read Article</a>
-          </article>
-          <article class="card feature-card">
-            <div class="card-thumb thumb-work"></div>
-            <p class="section-label">Work</p>
-            <h3>Why Japanese Students Struggle to Find Jobs Overseas</h3>
-            <p>Explores the major challenges Japanese students face when seeking employment abroad due to the mismatch between Japanese and global hiring systems.</p>
-            <a class="button secondary" href="hardship-to-work-in-foreign-country.html">Read Article</a>
-          </article>
-          <article class="card feature-card">
-            <div class="card-thumb thumb-work"></div>
-            <p class="section-label">Work</p>
-            <h3>Japanese IT Companies: Hiring, Training, and Work Culture</h3>
-            <p>A comprehensive article about hiring backgrounds, on-the-job training, English usage, and technical culture in Japanese IT companies.</p>
-            <a class="button secondary" href="it-company.html">Read Article</a>
-          </article>
-          <article class="card feature-card">
-            <div class="card-thumb thumb-work"></div>
-            <p class="section-label">Work</p>
-            <h3>Black Companies and Structural Issues in Japanese IT</h3>
-            <p>An overview of where black-company risks appear and why social or structural pressure can make resignation difficult.</p>
-            <a class="button secondary" href="black-company.html">Read Article</a>
-          </article>
-        </div>
+      <section class="section card">
+        <h2>Articles</h2>
+        <ul class="article-list">
+          <li><a class="article-row" href="internship.html"><span class="article-row-title">Why Japan Doesn't Use Internships</span><span class="article-row-desc">How the hiring system differs from Western countries</span><span class="article-row-arrow">›</span></a></li>
+          <li><a class="article-row" href="general.html"><span class="article-row-title">Graduating With No Work Experience</span><span class="article-row-desc">Why zero professional experience is normal for graduates</span><span class="article-row-arrow">›</span></a></li>
+          <li><a class="article-row" href="hardship-to-work-in-foreign-country.html"><span class="article-row-title">Why Japanese Students Struggle to Work Overseas</span><span class="article-row-desc">Mismatch between Japanese and global hiring standards</span><span class="article-row-arrow">›</span></a></li>
+          <li><a class="article-row" href="it-company.html"><span class="article-row-title">Japanese IT Companies</span><span class="article-row-desc">Hiring, training, English usage, and work culture</span><span class="article-row-arrow">›</span></a></li>
+          <li><a class="article-row" href="black-company.html"><span class="article-row-title">Black Companies and Structural Issues</span><span class="article-row-desc">Where risks appear and why resignation can be difficult</span><span class="article-row-arrow">›</span></a></li>
+        </ul>
       </section>
     </main>
 
-        <div data-site-footer></div>
+    <div data-site-footer></div>
     
-<!-- SIDEBAR_LOADER_START -->
-<script src="../../js/sidebar-data.js" defer></script>
-<script src="../../js/site-layout.js" defer></script>
-<script src="../../js/global-sidebar.js" defer></script>
-<!-- SIDEBAR_LOADER_END -->
+    <!-- SIDEBAR_LOADER_START -->
+    <script src="../../js/sidebar-data.js" defer></script>
+    <script src="../../js/site-layout.js" defer></script>
+    <script src="../../js/global-sidebar.js" defer></script>
+    <!-- SIDEBAR_LOADER_END -->
 
 </body>
 </html>

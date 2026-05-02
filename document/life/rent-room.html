@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -14,17 +14,13 @@
 		<div data-site-header></div>
 
 		<main class="container">
-			<section class="hero">
-				<div class="hero-card">
-					<span class="badge">Life</span>
-					<p class="breadcrumb">Home / Documents / Life / Renting Rooms</p>
-					<h1>Renting an Apartment in Japan</h1>
-					<p class="lead">
-						Renting an apartment in Japan involves several steps and unique cultural expectations.
-						Many of these processes may feel unfamiliar to people from other countries.
-					</p>
-				</div>
-			</section>
+			<div
+				data-site-hero
+				data-hero-title="Renting an Apartment in Japan"
+				data-hero-lead="Renting an apartment in Japan has some unique steps and cultural expectations that may feel unfamiliar."
+				data-hero-breadcrumb="Home / Documents / Life / Renting Rooms"
+				data-sidebar-label="Renting Rooms"
+			></div>
 
 			<section class="section card">
 				<p class="section-label">Conclusion</p>
@@ -47,7 +43,7 @@
 							</tr>
 							<tr>
 								<td><strong>Lower-cost option</strong></td>
-								<td>Meanwhile, share houses(シェアハウス) or guest houses(ゲストハウス) have very lower initial costs, like 30,000-50,000 JPY</td>
+								<td>Share houses(シェアハウス) or guest houses(ゲストハウス) have very lower initial costs, like 30,000-50,000 JPY</td>
 							</tr>
 							<tr>
 								<td><strong>Guarantor</strong></td>
@@ -55,11 +51,15 @@
 							</tr>
 							<tr>
 								<td><strong>Emergency contact</strong></td>
-								<td>Some landlords require an emergency contact, and in certain cases they prefer a family member.</td>
+								<td>Landlords often require an emergency contact, and they might prefer a family member.</td>
 							</tr>
 							<tr>
 								<td><strong>What to check early</strong></td>
-								<td>Because apartments can be taken quickly, it is better to check multiple options and verify the emergency-contact requirement early.</td>
+								<td>
+									As apartments can be taken quickly, 
+									it could be better to check multiple options
+									and verify the emergency-contact requirement in some cases.
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -68,8 +68,7 @@
 
 			<section class="section card">
 				<h2>1. Overview</h2>
-				<p>Renting an apartment in Japan involves several steps and unique cultural expectations.</p>
-				<p>Many of these processes may feel unfamiliar to people from other countries.</p>
+				<p>Renting an apartment in Japan has some unique steps and cultural expectations that may feel unfamiliar.</p>
 				<div class="callout">
 					<p>One month rent fee is very typical in Japan, unlike 2 weeks rent fee is common in some other countries.</p>
 				</div>
@@ -78,21 +77,82 @@
 			<section class="section card">
 				<h2>2. Required Documents and Initial Costs(初期費用, shoki hiyou)</h2>
 				<p>When renting an apartment, tenants are usually required to prepare several documents and pay multiple upfront fees.</p>
-				<p>Common examples include:</p>
-				<ul>
-					<li>Identification documents(身分証明書, mibun shoumeisho)</li>
-					<li>Proof of income or employment(収入証明書, shūnyū shōmeisho)</li>
-					<li>Emergency contact information(緊急連絡先, kinkyū renraku-saki)</li>
-					<li>Initial costs such as deposit, key money, agency fee, and first month's rent or few months' rent in advance</li>
-				</ul>
-				<div class="callout">
-					<p>It can be over 300,000 JPY or even higher depending on how much the one month rent fee is</p>
-				</div>
-				<ul>
-					<li>Meanwhile, share houses(シェアハウス) or guest houses(ゲストハウス) have very lower initial costs, like 30,000-50,000 JPY</li>
-					<li>You don't need the fridge, washing machine, or other appliances, as they are usually provided in shared accommodations.</li>
-					<li>So, that can be a great option to live in a share house or guest house.</li>
-				</ul>
+
+				<table class="summary-table">
+					<thead>
+						<tr>
+						<th>English</th>
+						<th>Japanese</th>
+						<th>Notes</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Identification</td>
+							<td>身分証明書, mibun shoumeisho</td>
+							<td>Passport, residence card, etc.</td>
+						</tr>
+						<tr>
+							<td>Proof of income or employment</td>
+							<td>収入証明書, shūnyū shōmeisho</td>
+							<td>Pay slips, driver's license, employment contract, etc.</td>
+						</tr>
+						<tr>
+							<td>Emergency contact info</td>
+							<td>緊急連絡先, kinkyū renraku-saki</td>
+							<td>Usually a family member</td>
+						</tr>
+						<tr>
+							<td>Guarantor / Guarantor company</td>
+							<td>保証人 / 保証会社, hoshounin / hoshou gaisha</td>
+							<td>Most apartments require one or the other</td>
+						</tr>
+					</tbody>
+					</table>
+
+					<p />
+					<p>
+						Initial costs can be quite high, often exceeding 300,000 JPY or more depending on the rent amount.
+						So, you can choose a share house or guest house to live.
+						Please refer to the table below.
+					</p>
+
+					<table class="summary-table">
+					<thead>
+						<tr>
+						<th></th>
+						<th>Regular Apartment</th>
+						<th>Share House / Guest House</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Initial Costs</td>
+							<td>can exceed 300,000 JPY(2,000 USD or 1,800 EUR)</td>
+								<p>
+									It includes several fees such as:
+									<ul>
+										<li>deposit</li>
+										<li>key money</li>
+										<li>agency fee</li>
+										<li>first month's rent</li>
+									</ul>
+								</p>
+							</td>
+							<td>Around 30,000-50,000 JPY (200-350 USD or 180-320 EUR)</td>
+						</tr>
+						<tr>
+							<td>Appliances</td>
+							<td>Must purchase yourself</td>
+							<td>Fridge, washing machine, etc. usually provided</td>
+						</tr>
+						<tr>
+							<td>Privacy</td>
+							<td>Full private unit</td>
+							<td>Shared common areas (kitchen, bath, etc.)</td>
+						</tr>
+					</tbody>
+				</table>
 			</section>
 
 			<section class="section card">
@@ -109,47 +169,56 @@
 
 			<section class="section card">
 				<h2>4. Emergency Contact (緊急連絡先, kinkyū renraku-saki)</h2>
-				<p>Some landlords require an emergency contact, and in certain cases they prefer a family member.</p>
-				<p>You may see a phrase like:</p>
+				<p>
+					Some landlords require an emergency contact and prefer a family member within the second degree of kinship.
+					The requirement often appears as:
+				</p>
 				<div class="callout">
 					<p>「緊急連絡先は原則2親等以内の親族でなければなりません」</p>
-					<p>(“In principle, the emergency contact must be a relative within the second degree of kinship.”)</p>
+					<p>("In principle, the emergency contact must be a relative within the second degree of kinship.")</p>
+				
+					<p>
+						「緊急時に連絡の取れるご家族またはご親族でお願いしております。
+						このメールに返信する形で構いませんので、以下の情報をお送りください。」
+					</p>
+					<p>
+						("We ask for a family member or relative who can be contacted in case of emergency.
+						Please reply to this email with the following information.")
+					</p>
 				</div>
-				<p>The key word is 原則 (gensoku), meaning “in principle”.</p>
-				<p>This means exceptions are sometimes possible. If you explain your situation, many landlords or management companies may allow a friend or employer instead. However, some are strict and accept only family members, so it is important to confirm this before signing the lease.</p>
-				<p>In some cases, the management company is very strict to the rules regarding emergency contacts.</p>
 				<p>
-					Please refer to the picture below.
-					It's an example of such a situation
-					that I encountered when I was looking for a share house in 2025
-					(I was over 25 years old).
+					<img src="./images/sharehouse-emergency-contact-not-strict.png" alt="Emergency Contact Requirement Example" />
 				</p>
-				<p><a href="images/sharehouse-emergency-contact.png" target="_blank" rel="noopener noreferrer">Sharehouse Emergency Contact</a></p>
+				<p>
+					The key word is <strong>原則</strong> (gensoku) — "in principle."
+					Many landlords allow exceptions if you explain your situation, but some are strict and accept only family.
+					Always confirm before signing the lease.
+				</p>
+				<p>The example below is a real response I received from a share house in 2025, rejecting a friend as an emergency contact:</p>
 				<div class="callout">
-					<p>This e-mail says that</p>
 					<p>
 						緊急連絡先につきまして、現在ご入力いただいている方が「ご友人」との記載がございましたが、
 						緊急連絡先はご家族（第2親等まで）に限る ルールとなっております。
-						大変恐れ入りますが、内容をご確認のうえ、該当部分のご修正をお願いできますでしょうか。
 					</p>
 					<p>
-						(Regarding the emergency contact, we see that you have entered a "friend",
-						but the emergency contact "must be" a family member (up to the second degree of kinship) in our rules.
-						We apologize for the inconvenience, but please check the content and make the necessary corrections.)
+						(We see that you have entered a "friend" as the emergency contact,
+						but our rules require a family member up to the second degree of kinship.
+						Please update the information accordingly.)
 					</p>
+					<img src="./images/sharehouse-emergency-contact-strict.png" alt="Sharehouse Emergency Contact Example" />
 				</div>
-				<p>Also, because apartments can be taken quickly, it is better to check multiple options and verify the emergency‑contact requirement early.</p>
-				<p>Landlords tend to trust family members more than friends or employers, as they are considered more reliable in emergencies.</p>
-				<p>In practice, you can often write a friend or employer without needing their signature or stamp, but some landlords may not accept it—so always check in advance.</p>
-				<div class="callout">
+				<p>
+					In practice, you can often write a friend or employer without needing their signature,
+					but some landlords will not accept it — so check early, as apartments can be taken quickly.
+				</p>
+				<div class="callout warning">
 					<p>
-						Also, some landlords aren't very welcoming to foreign tenants,
-						because they may have concerns about language barriers or cultural differences.
+						Some landlords are also less welcoming to foreign tenants due to concerns about language barriers
+						or cultural differences. 
 					</p>
 					<p>
-						Some people think that foreign people are more likely to be noisy neighbors or cause some issues.
-						In reality, some Japanese people experience these bad experiences caused by a few individuals, not all foreigners.
-					</p>
+						This is not universal, but worth being aware of.
+					</p>					
 				</div>
 			</section>
 
