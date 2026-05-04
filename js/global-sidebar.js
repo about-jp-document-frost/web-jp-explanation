@@ -1,8 +1,6 @@
 (function () {
-  // Apply saved theme immediately to prevent flash
-  if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.classList.add('dark');
-  }
+  // Always use dark mode
+  document.documentElement.classList.add('dark');
 
   function getBasePath() {
     var pathname = window.location.pathname;
@@ -172,20 +170,5 @@
     sessionStorage.setItem(SCROLL_KEY, aside.scrollTop);
   });
 
-  // Inject dark/light toggle button into header nav
-  var navEl = document.querySelector('.nav-links');
-  if (navEl) {
-    var btn = document.createElement('button');
-    btn.className = 'theme-toggle-btn';
-    btn.setAttribute('aria-label', 'Toggle dark mode');
-    btn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
 
-    btn.addEventListener('click', function () {
-      var isDark = document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      btn.textContent = isDark ? '☀️' : '🌙';
-    });
-
-    navEl.appendChild(btn);
-  }
 })();

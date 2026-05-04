@@ -430,29 +430,36 @@ body.theme-education .badge::before {
   gap: 16px;
   padding: 14px 18px;
   text-decoration: none;
-  color: inherit;
-  background: #d6e8f7;
-  border: 1px solid #a8c8e8;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0f766e, #1a6b9a);
+  border: 1px solid #0e5f5a;
   border-radius: 10px;
-  transition: border-color 0.15s, background 0.15s, transform 0.1s;
+  box-shadow: 0 8px 18px rgba(15, 118, 110, 0.2);
+  transition: border-color 0.15s, background 0.15s, transform 0.1s, box-shadow 0.15s;
   cursor: pointer;
 }
 
 .article-list a.article-row:hover {
-  background: #bfd9f0;
-  border-color: #1a6b9a;
-  transform: translateX(3px);
+  background: linear-gradient(135deg, #0d6b64, #155b84);
+  border-color: #0b4f63;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(15, 118, 110, 0.28);
+}
+
+.article-list a.article-row:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
 }
 
 .article-list .article-row-title {
-  font-weight: 600;
-  color: #222222;
+  font-weight: 700;
+  color: #ffffff;
   flex-shrink: 0;
   min-width: 0;
 }
 
 .article-list .article-row-desc {
-  color: #222222;
+  color: rgba(255, 255, 255, 0.92);
   font-size: 0.95rem;
   white-space: nowrap;
   overflow: hidden;
@@ -465,25 +472,25 @@ html.dark .article-list .article-row-desc {
 
 html.dark .article-list a.article-row {
   color: #ffffff;
-  background: #1a3a52;
-  border-color: #2a5a7a;
+  background: linear-gradient(135deg, #1f5f8a, #194d70);
+  border-color: #2f6f9a;
 }
 
 html.dark .article-list a.article-row:hover {
-  background: #1e4a6a;
-  border-color: #4da3ff;
+  background: linear-gradient(135deg, #246d9d, #1c5c86);
+  border-color: #60a5fa;
 }
 
 html.dark .article-list .article-row-title {
-  color: #4da3ff;
+  color: #ffffff;
 }
 
 .article-list .article-row-arrow {
   margin-left: auto;
   flex-shrink: 0;
-  color: var(--accent);
+  color: #ffffff;
   font-size: 1rem;
-  opacity: 0.5;
+  opacity: 0.75;
   transition: opacity 0.15s, transform 0.15s;
 }
 
@@ -630,7 +637,7 @@ html.dark .article-list .article-row-title {
   padding: 14px 16px;
   border-left: 4px solid var(--theme-primary);
   border-radius: 12px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, var(--theme-soft) 100%);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .callout strong {
